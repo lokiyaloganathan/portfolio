@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ma page de portfolio</title>
+    <link rel="stylesheet" href="styles/css/bootstrap.min.css"> 
+    <link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js" defer></script>
+    <script src="script/script.js" defer></script>
+    <script src="script/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-dark navbar-expand-md bg-black fixed-top"><!--navbar-expand: sert à dire à partir de quel taille nav est affiché-->
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#accueil"><!--navbar-brand: logo-->
+                <img src="images/logo.jpg" class="img-logo" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation"><!--navbar-toggler: affiche le bouton de menu hamburger -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto gap-3">
+                    <li class="nav-item"><a class="nav-link menu-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#aproposdemoi">À propos de moi</a></li>
+                    <li class="nav-item"><a class="nav-link menu-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <button id="toggle-theme">☽</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+    <main>
+        <div class="container-fluid mt-5 pt-5">
+            <section id="accueil" data-aos="fade-down" class="row h-auto border border-5 border-primary rounded m-3 mt-5 py-5 p-3 align-items-center">
+                <section class="col-12 col-md-6 col-lg-4">
+                    <img class="img-fluid mx-auto p-3" src="images/lokiya.jpg"/>
+                </section> 
+                <section class="col-12 col-md-6 col-lg-8">
+                    <h2><i>Bienvenue !</i></h2>
+                    <h4 class="my-3 fs-6 fs-md-3 fs-lg-1">Je m'appelle Lokiya Sylvia LOGANATHAN. Actuellement, je suis étudiante en 2ème année de licence d’informatique en apprentissage
+                    «Développeur d'Applications Nouvelles Technologies» (DANT) à l’Université Sorbonne. Je suis à la recherche d'un stage développeuse informatique d'au moins 3 mois à partir de mi-janvier 2026.<br>
+                    Découvrez ici mes projets, mes compétences, mes formations et mes expériences !
+                    </h4>
+                    <a href="fichier/cvlokiya.pdf" class="btn btn-secondary mt-3" target="_blank" rel="noopener noreferrer">Télécharger mon CV</a>
+                </section>
+            </section>
+            <section id="projets" class="row my-5 p-5">
+                <h1 class="fw-black text-uppercase mb-4 text-center p-3">Projets</h1>
+                <section class="row mb-5">
+                    <section class="col-12 col-lg-6">
+                        <h2 class="fw-light mb-4">Projet de modélisation 3D :</h2>
+                        <p>Le projet consisté a modélisé en 3D un modèle de support de téléphone créée par nous.</p>                  
+                        <a href="fichier/soclefinal.zip" class="align-items-center justify-content-center btn btn-secondary mt-3 " download>Télécharger mon projet 3D</a>
+                    </section>
+                    <img data-aos="fade-down" class="img-site align-items-center mx-auto p-3" src="images/soclefinal.png"/> 
+                </section>
+                <section class="mb-5">
+                    <h2 class="fw-light mb-4">Atelier de recherche encadrée CURIOUS-Info :</h2>
+                    <p>Modèles 2D et 3D - extraction de photos et mesures des pourcentages de surfaces occupées :</p><br>
+                    <ul>
+                        <li>Pour analyser un modèle 2D sur ImageJ, on a fait la mise à l'échelle, puis on a paramétré la fenêtre Results pour lire les surfaces et enfin on a calculé la surface de chaque catégorie.
+                            On a converti de pixel en cm² et on a fait un  graphique à partir des résultats.</li>
+                        <li>Pour analyser un modèle 3D sur CloudCompare, on a fait la mise à l'échelle. Puis pour calculer la surface d'une catégorie, on a regrouper des nuages de points et on a transformer chaque nuage de points en maillage.
+                            Pour finir, on a fait un  graphique à partir des résultats et on a pu aussi voir l'utilisation de Canupo dans CloudCompare.</li>
+                    </ul>
+                    <a href="fichier/ARE.zip" class="align-items-center justify-content-center btn btn-secondary mt-3 " download>Télécharger mon projet ARE</a>
+                </section>
+                <section class="row">
+                    <section class="col-12 col-lg-6">
+                        <h2 class="fw-light mb-4">Projets-web :</h2>
+                        <p>Le projet consisté a reproduire le modèle donner avec du HTML, CSS et Bootstrap.</p>                  
+                        <a href="fichier/loganathan_lokiya-HTMLCSS.zip" class="align-items-center justify-content-center btn btn-secondary mt-3 " download>Télécharger mon projet-web</a>
+                    </section>
+                    <img data-aos="fade-down" class="col-12 col-lg-6 img-site align-items-center  mx-auto p-3" src="images/site.jpg"/> 
+                </section>
+            </section>
+            <section id="competences" class="bg-light my-5 p-5">
+                <h1 class="fw-black text-uppercase mb-4 text-center p-3">Compétences</h1>
+                <div class="row gap-5 justify-content-center">
+                    <div data-aos="fade-down" data-aos-delay="0" class="col-12 p-5 my-5 border border-5 border-primary rounded bg-white">
+                        <h2 class="fw-light text-primary text-uppercase text-center mb-4">Informatique</h2>
+                        <div class="row text-center g-4">
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/languagec.jpg" alt="C avancé">
+                                <p class="text-primary">Langage C avancé</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/python.jpg" alt="Python">
+                                <p class="text-primary">Langage Python</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/html.jpg" alt="HTML">
+                                <p class="text-primary">HTML</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/css.jpg" alt="CSS">
+                                <p class="text-primary">CSS</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/bootstrap.jpg" alt="Bootstrap">
+                                <p class="text-primary">Bootstrap</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/javascript.jpg" alt="JavaScript">
+                                <p class="text-primary">JavaScript</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/mysql.jpg" alt="MySQL">
+                                <p class="text-primary">MySQL</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/php.jpg" alt="PHP">
+                                <p class="text-primary">PHP</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/bash.jpg" alt="Bash">
+                                <p class="text-primary">Bash</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="200" class="col-12 p-5 my-5 border border-5 border-primary rounded bg-white">
+                        <h2 class="fw-light text-primary text-uppercase text-center mb-4">Logiciel</h2>
+                        <div class="row text-center g-4">
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/Pack-Office.jpg" alt="Pack-Office">
+                                <p class="text-primary">Pack Office: Excel, Word et PowerPoint</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/logicielR.jpg" alt="logicielR">
+                                <p class="text-primary">Logiciel R: RStudio</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/vsc.jpg" alt="Visual studio code">
+                                <p class="text-primary">Visual Studio Code</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/cloudcompare.jpg" alt="cloudcompare">
+                                <p class="text-primary">CloudCompare</p>
+                            </div>
+                            <div class="col-6 col-md-3">
+                                <img class="img-icone mb-2" src="images/Jupyter.jpg" alt="jupyter">
+                                <p class="text-primary">Jupyter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-down" data-aos-delay="400" class="col-12 p-5 my-5 border border-5 border-primary rounded bg-white">
+                        <h2 class="fw-light text-primary text-uppercase text-center mb-4">Langue</h2>
+                        <ul class="text-primary">
+                            <li>Français: Langue maternelle</li>
+                            <li>Tamoul: Langue maternelle</li>
+                            <li>Anglais: Niveau B2</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="aproposdemoi" class="my-5 p-5">
+                <h1 class="fw-black text-uppercase mb-4 text-center p-3">À propos de moi</h1>
+                <p></p>
+                <section class="container my-5 bg-light" data-aos="fade-down">
+                    <h2 class="fw-light text-uppercase mb-4">Formation</h2>
+                    <p class="fw-bold fs-5 mb-1">2025-2026 : Licence d’informatique en apprentissage « Développeur d'Applications Nouvelles Technologies »</p>
+                    <p class="fw-semibold text-secondary mb-2">Université Sorbonne (UPMC)</p>
+                    <ul>
+                        <li>Développement web</li>
+                        <li>Langage C, Shell</li>
+                        <li>Mathématiques discrètes</li>
+                    </ul>
+                    <p class="fw-bold fs-5 mb-1 mt-4">2024-2025 : Licence en sciences formelles</p>
+                    <p class="fw-semibold text-secondary mb-2">Université Sorbonne (UPMC)</p>
+                    <ul>
+                        <li>Python, langage C, Logiciel R</li>
+                        <li>Mathématiques approfondies</li>
+                        <li>Projets universitaires</li>
+                    </ul>
+                    <p class="fw-bold fs-5 mb-1 mt-4">2023-2024 : Classe préparatoire aux grandes écoles (PCSI)</p>
+                    <p class="fw-semibold text-secondary">Lycée Albert Schweitzer</p>
+                    <p class="fw-bold fs-5 mb-1 mt-4">2022-2023 : Baccalauréat général</p>
+                    <p class="fw-semibold text-secondary">Lycée Eugène Delacroix</p>
+                </section>
+                <section class="container my-5 bg-light" data-aos="fade-down">
+                    <h2 class="fw-light text-uppercase mb-4">Expériences</h2>
+                    <p class="fw-bold fs-5 mb-1">Depuis 2024 : Bénévole</p>
+                    <ul>
+                    <li>Coordinatrice des examens oraux</li>
+                    <li>Organiser la cérémonie des remises de diplômes</li>
+                    <li>Enregistrer des données sur un fichier excel</li>
+                    <li>Surveiller les examens écrites</li>
+                    </ul>
+                    <p class="fw-bold fs-5 mb-1">Depuis 2022 : Bénévole</p>
+                    <ul>
+                    <li>Organiser la cérémonie des remises de diplômes</li>
+                    <li>Surveiller les examens écrites</li>
+                    </ul>
+                    <p class="fw-bold fs-5 mb-1">07/2024 : Employé polyvalent à E.Leclerc, Bobigny</p>
+                    <ul>
+                    <li>Ranger les rayons</li>
+                    </ul>
+                    <p class="fw-bold fs-5 mb-1">20/01/2020 - 24/01/2020 : Stagiaire à la crèche Maryse Bastié</p>
+                    <ul>
+                    <li>S'occuper des enfants</li>
+                    </ul>
+                </section>
+            </section>
+            <section id="contact" class="row justify-content-center my-5 p-5">
+                <section data-aos="fade-up" class="col-12 col-lg-6 border border-5 border-primary rounded text-black p-3 m-3">
+                    <h1 class="mb-3">Contactez-moi</h1>
+                    <p class="text-secondary">Une question, besoin d'information supplémentaire ? N'hésitez pas à utiliser ce formulaire pour prendre contact avec moi !</p>
+                    <form id="Form">
+                        <div class="mb-3">
+                            <label for="nom" class="form-label">Votre nom</label>
+                            <input type="text" class="form-control placeholder-white bg-secondary" id="nom" placeholder="Martin" required><!--form-control:blog pour le formulaire-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Votre e-mail</label>
+                            <input type="email" class="form-control placeholder-white bg-secondary" id="email" placeholder="monadresse@mail.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label text-white">Votre message</label>
+                            <textarea class="form-control bg-secondary placeholder-white" id="message" rows="5" placeholder="Bonjour, je vous contacte car..." required></textarea><!--rows: taille du blog texte-->
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-black border border-black text-black">Envoyer mon message</button><!--btn: boutton pour envoyer le message-->
+                        </div>
+                        <p id="successMessage" class="text-success text-center mt-3" style="display:none;">Votre message a été envoyé !</p>
+                    </form>
+                </section>
+                <section class="col-12 col-lg-4 p-3" data-aos="fade-up">
+                    <h2 class="mb-3">Contact</h2>
+                    <p>
+                        <img class="img-contact mx-auto mx-lg-0 p-0" src="images/tel.jpg"/>
+                        <a href="tel:+33749916356" class="text-decoration-none text-black">0749916356</a><br><br>
+                        <img class="img-contact mx-auto mx-lg-0 p-0" src="images/mail.jpg"/>
+                        <a href="mailto:lokiya@hotmail.fr" class="text-decoration-none text-black" target="_blank" rel="noopener noreferrer">lokiya@hotmail.fr</a><br><br>
+                        <img class="img-contact mx-auto mx-lg-0 p-0" src="images/linkedin.jpg"/>
+                        <a href="https://www.linkedin.com/in/lokiya-sylvia-loganathan-ba4b3835b" title="Cliquez sur le lien pour aller vers Linkedin" class="text-decoration-none text-black" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lokiya-sylvia-loganathan-ba4b3835b</a><br><br>
+                        <img class="img-contact mx-auto mx-lg-0 p-0" src="images/github.jpg"/>
+                        <a href="https://github.com/lokiyaloganathan" title="Cliquez sur le lien pour aller vers Github" class="text-decoration-none text-black" target="_blank" rel="noopener noreferrer">https://github.com/lokiyaloganathan</a>
+                    </p>
+                </section>
+            </section>
+        </div>
+    </main>
+    <footer class="container-fluid bg-black text-white text-center fixed-bottom">
+        © 2025 Lokiya Sylvia LOGANATHAN | Tous droits réservés.
+    </footer>
+</body>
+</html>
